@@ -1,0 +1,184 @@
+.custom-btn {
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.btn-13 {
+    background-color: #89d8d3;
+    background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+    border: none;
+    z-index: 1;
+}
+
+.btn-13:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: #4dccc6;
+    background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+}
+
+.btn-13:hover {
+    color: #fff;
+}
+
+.btn-13:hover:after {
+    top: 0;
+    height: 100%;
+}
+
+.btn-13:active {
+    top: 2px;
+}
+
+.spanDiv {
+    margin-top: -50px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.spanType {
+    display: inline-block;
+    margin-left: 45%;
+}
+
+.goSpan {
+    z-index: 98;
+    display: inline-block;
+    color: red;
+    cursor: pointer;
+}
+
+.alertDiv {
+    position: absolute;
+    width: 99%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-top: -47%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+.closeDiv {
+    float: right;
+    margin-right: 110px;
+    margin-top: 30px;
+    font-weight: bolder;
+}
+
+
+
+.inputDiv {
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    margin-top: -20px;
+}
+
+.buttonDiv {
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 20%;
+}
+
+.input--haruki {
+    margin: 4em 1em 1em;
+}
+
+.input__field--haruki {
+    /* padding: 0.4em 0.25em; */
+    width: 100%;
+    background: transparent;
+    color: #AFB5BB;
+    font-size: 1.55em;
+}
+
+.input__label--haruki {
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    pointer-events: none;
+}
+
+.input__label-content--haruki {
+    transition: transform 0.3s;
+}
+
+.input__label--haruki::before,
+.input__label--haruki::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 4px;
+    background: #6a7989;
+    transition: transform 0.3s;
+}
+
+.input__label--haruki::before {
+    top: 0;
+}
+
+.input__label--haruki::after {
+    bottom: 0;
+}
+
+.input__field--haruki:focus+.input__label--haruki .input__label-content--haruki,
+.input--filled .input__label-content--haruki {
+    transform: translate3d(0, -90%, 0);
+}
+
+.input__field--haruki:focus+.input__label--haruki::before,
+.input--filled .input__label--haruki::before {
+    transform: translate3d(0, -0.5em, 0);
+}
+
+.input__field--haruki:focus+.input__label--haruki::after,
+.input--filled .input__label--haruki::after {
+    transform: translate3d(0, 0.5em, 0);
+}
+
+.abutton {  
+    width: 200px;  
+    padding:8px;  
+    background-color: #428bca;  
+    border-color: #357ebd;  
+    color: #fff;  
+    -moz-border-radius: 10px;  
+    -webkit-border-radius: 10px;  
+    border-radius: 10px; /* future proofing */  
+    -khtml-border-radius: 10px; /* for old Konqueror browsers */  
+    text-align: center;  
+    vertical-align: middle;  
+    border: 1px solid transparent;  
+    font-weight: 900;  
+    font-size:125%  
+}  
